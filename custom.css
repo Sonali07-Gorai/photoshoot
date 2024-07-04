@@ -1,0 +1,138 @@
+/* page hover */
+
+ul.sub-menu{
+    background-color: #ffa216;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+ul.nav-menu > li:hover ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ul.nav-menu > li > a:hover ~ ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+} */
+
+ul.sub-menu > li > a{
+    padding: 4px 10px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+ul.sub-menu > li > a:hover{
+    background-color: black;
+    padding-left: 24px;
+}
+/* ul.sub-menu > li:not(:last-child){
+    border-bottom: 1px solid #4a4a4a;
+} */
+
+/* slider */
+
+.my-slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    position: static !important;
+}
+
+.my-slider .slick-dots li button {
+    font-size: 0px !important;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(44, 94, 150);
+}
+
+.my-slider .slick-dots li.slick-active button {
+    background-color: darkgoldenrod;
+}
+
+.my-slider .slick-arrow {
+    position: absolute;
+    top: 120px;
+}
+
+.my-slider .slick-arrow.slick-prev {
+    left: -20px;
+}
+
+.my-slider .slick-arrow.slick-next {
+    right: -20px;
+}
+
+.page-slider .slick-arrow {
+    position: absolute;
+    top: 20%;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+    z-index: 9999 !important;
+}
+
+.page-slider .slick-arrow.slick-prev {
+    left: 0;
+}
+
+.page-slider .slick-arrow.slick-next {
+    right: 0;
+}
+
+.page-slider .slick-arrow.slick-prev:hover {
+    left: -10px;
+    color: darkorange;
+}
+
+.page-slider .slick-arrow.slick-next:hover {
+    right: -10px;
+    color: darkorange;
+}
+
+/* skills */
+
+.PGY{
+    width: 95%;
+    animation: animate-PGY 3s;
+    height: 25px;
+    position: relative;
+    border-radius: 1000px;
+    background-color: black;
+}
+
+.PSP{
+    width: 90%;
+    animation: animate-PSP 3s;
+    height: 25px;
+    position: relative;
+    border-radius: 1000px;
+    background-color: black;
+}
+
+.CMS{
+    width: 85%;
+    animation: animate-CMS 3s;
+    height: 25px;
+    position: relative;
+    border-radius: 1000px;
+    background-color: black;
+}
+
+@keyframes animate-PGY {
+    from{width:0px}
+    to{width: 95%;}
+}
+
+@keyframes animate-PSP {
+    from{width:0px}
+    to{width: 90%;}
+}
+
+@keyframes animate-CMS {
+    from{width:0px}
+    to{width: 85%;}
+}
+
